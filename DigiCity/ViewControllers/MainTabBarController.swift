@@ -8,19 +8,32 @@
 
 import UIKit
 
-class MainTabBarController: UITabBarController {
+class MainTabBarController: UITabBarController, UITabBarControllerDelegate, UINavigationControllerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.delegate = self
+        
         // Do any additional setup after loading the view.
     }
+    func addTabs() {
+        var array = ["First","Second","Third"]
+        array.append("Forth")
 
+    }
+    
+    func createFeedTab() -> FeedNavigationController {
+        let objFeedController = MainStoryBoard.instantiateViewControllerWithIdentifier("FeedNavigationController") as! FeedNavigationController
+        return objFeedController
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+    
+
 
     /*
     // MARK: - Navigation
