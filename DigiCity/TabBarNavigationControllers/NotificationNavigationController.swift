@@ -2,13 +2,13 @@
 //  NotificationNavigationController.swift
 //  DigiCity
 //
-//  Created by Varun Kumar on 15/09/16.
+//  Created by Varun Kumar on 19/09/16.
 //  Copyright © 2016 Varun. All rights reserved.
 //
 
 import UIKit
 
-class NotificationNavigationController: UIViewController {
+class NotificationNavigationController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

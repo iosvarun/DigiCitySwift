@@ -13,11 +13,6 @@
 		D84224121D8A7191007CA632 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84224111D8A7191007CA632 /* FeedViewController.swift */; };
 		D84224141D8A71A3007CA632 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84224131D8A71A3007CA632 /* NotificationViewController.swift */; };
 		D84224161D8A71B6007CA632 /* CityItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84224151D8A71B6007CA632 /* CityItemViewController.swift */; };
-		D84224191D8A722B007CA632 /* AddPostNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84224181D8A722B007CA632 /* AddPostNavigationController.swift */; };
-		D842241B1D8A723E007CA632 /* CityNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D842241A1D8A723E007CA632 /* CityNavigationController.swift */; };
-		D842241D1D8A724F007CA632 /* EventNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D842241C1D8A724F007CA632 /* EventNavigationController.swift */; };
-		D842241F1D8A725F007CA632 /* FeedNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D842241E1D8A725F007CA632 /* FeedNavigationController.swift */; };
-		D84224211D8A7271007CA632 /* NotificationNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84224201D8A7271007CA632 /* NotificationNavigationController.swift */; };
 		D84224241D8A7412007CA632 /* CityItemListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84224231D8A7412007CA632 /* CityItemListViewController.swift */; };
 		D84224261D8A7426007CA632 /* CityItemDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84224251D8A7426007CA632 /* CityItemDetailsViewController.swift */; };
 		D84224291D8A74DC007CA632 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84224281D8A74DC007CA632 /* UserProfileViewController.swift */; };
@@ -31,9 +26,15 @@
 		D842243F1D8A7841007CA632 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D842243E1D8A7841007CA632 /* EventViewController.swift */; };
 		D84224421D8A799C007CA632 /* EventDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84224411D8A799C007CA632 /* EventDetailsViewController.swift */; };
 		D842244C1D8BB9D6007CA632 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D842244B1D8BB9D6007CA632 /* Constants.swift */; };
+		D84224561D8FBE92007CA632 /* FeedNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84224551D8FBE92007CA632 /* FeedNavigationController.swift */; };
+		D84224581D8FBEA6007CA632 /* CityNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84224571D8FBEA6007CA632 /* CityNavigationController.swift */; };
+		D842245A1D8FBEB7007CA632 /* EventNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84224591D8FBEB7007CA632 /* EventNavigationController.swift */; };
+		D842245C1D8FBECB007CA632 /* NotificationNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D842245B1D8FBECB007CA632 /* NotificationNavigationController.swift */; };
+		D842245E1D8FBED7007CA632 /* AddPostNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D842245D1D8FBED7007CA632 /* AddPostNavigationController.swift */; };
 		D8955DC61D781D5300573089 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8955DC51D781D5300573089 /* AppDelegate.swift */; };
 		D8955DCD1D781D5300573089 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8955DCC1D781D5300573089 /* Assets.xcassets */; };
 		D8955DD01D781D5300573089 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8955DCE1D781D5300573089 /* LaunchScreen.storyboard */; };
+		D8B4393E1D9541FA00AE1671 /* CustomBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B4393D1D9541FA00AE1671 /* CustomBadge.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,11 +44,6 @@
 		D84224111D8A7191007CA632 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		D84224131D8A71A3007CA632 /* NotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		D84224151D8A71B6007CA632 /* CityItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityItemViewController.swift; sourceTree = "<group>"; };
-		D84224181D8A722B007CA632 /* AddPostNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPostNavigationController.swift; sourceTree = "<group>"; };
-		D842241A1D8A723E007CA632 /* CityNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityNavigationController.swift; sourceTree = "<group>"; };
-		D842241C1D8A724F007CA632 /* EventNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventNavigationController.swift; sourceTree = "<group>"; };
-		D842241E1D8A725F007CA632 /* FeedNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedNavigationController.swift; sourceTree = "<group>"; };
-		D84224201D8A7271007CA632 /* NotificationNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationNavigationController.swift; sourceTree = "<group>"; };
 		D84224231D8A7412007CA632 /* CityItemListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityItemListViewController.swift; sourceTree = "<group>"; };
 		D84224251D8A7426007CA632 /* CityItemDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityItemDetailsViewController.swift; sourceTree = "<group>"; };
 		D84224281D8A74DC007CA632 /* UserProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
@@ -61,11 +57,17 @@
 		D842243E1D8A7841007CA632 /* EventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
 		D84224411D8A799C007CA632 /* EventDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetailsViewController.swift; sourceTree = "<group>"; };
 		D842244B1D8BB9D6007CA632 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D84224551D8FBE92007CA632 /* FeedNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedNavigationController.swift; sourceTree = "<group>"; };
+		D84224571D8FBEA6007CA632 /* CityNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityNavigationController.swift; sourceTree = "<group>"; };
+		D84224591D8FBEB7007CA632 /* EventNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventNavigationController.swift; sourceTree = "<group>"; };
+		D842245B1D8FBECB007CA632 /* NotificationNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationNavigationController.swift; sourceTree = "<group>"; };
+		D842245D1D8FBED7007CA632 /* AddPostNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPostNavigationController.swift; sourceTree = "<group>"; };
 		D8955DC21D781D5300573089 /* DigiCity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DigiCity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8955DC51D781D5300573089 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8955DCC1D781D5300573089 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8955DCF1D781D5300573089 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D8955DD11D781D5300573089 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8B4393D1D9541FA00AE1671 /* CustomBadge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomBadge.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,11 +107,11 @@
 		D84224171D8A7212007CA632 /* TabBarNavigationControllers */ = {
 			isa = PBXGroup;
 			children = (
-				D84224181D8A722B007CA632 /* AddPostNavigationController.swift */,
-				D842241A1D8A723E007CA632 /* CityNavigationController.swift */,
-				D842241C1D8A724F007CA632 /* EventNavigationController.swift */,
-				D842241E1D8A725F007CA632 /* FeedNavigationController.swift */,
-				D84224201D8A7271007CA632 /* NotificationNavigationController.swift */,
+				D84224551D8FBE92007CA632 /* FeedNavigationController.swift */,
+				D84224571D8FBEA6007CA632 /* CityNavigationController.swift */,
+				D84224591D8FBEB7007CA632 /* EventNavigationController.swift */,
+				D842245B1D8FBECB007CA632 /* NotificationNavigationController.swift */,
+				D842245D1D8FBED7007CA632 /* AddPostNavigationController.swift */,
 			);
 			path = TabBarNavigationControllers;
 			sourceTree = "<group>";
@@ -152,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				D842244B1D8BB9D6007CA632 /* Constants.swift */,
+				D8B4393D1D9541FA00AE1671 /* CustomBadge.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -242,6 +245,7 @@
 				TargetAttributes = {
 					D8955DC11D781D5300573089 = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -284,27 +288,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				D84224331D8A76BA007CA632 /* LoginViewController.swift in Sources */,
+				D842245C1D8FBECB007CA632 /* NotificationNavigationController.swift in Sources */,
 				D842244C1D8BB9D6007CA632 /* Constants.swift in Sources */,
 				D842243F1D8A7841007CA632 /* EventViewController.swift in Sources */,
 				D842242B1D8A74F8007CA632 /* OtherUserProfileViewController.swift in Sources */,
+				D8B4393E1D9541FA00AE1671 /* CustomBadge.swift in Sources */,
 				D84224101D8A715B007CA632 /* AddPostViewController.swift in Sources */,
 				D84224291D8A74DC007CA632 /* UserProfileViewController.swift in Sources */,
 				D84224261D8A7426007CA632 /* CityItemDetailsViewController.swift in Sources */,
 				D84224141D8A71A3007CA632 /* NotificationViewController.swift in Sources */,
 				D84224351D8A76C9007CA632 /* SignUpViewController.swift in Sources */,
 				D84224161D8A71B6007CA632 /* CityItemViewController.swift in Sources */,
-				D84224211D8A7271007CA632 /* NotificationNavigationController.swift in Sources */,
+				D84224581D8FBEA6007CA632 /* CityNavigationController.swift in Sources */,
 				D84224121D8A7191007CA632 /* FeedViewController.swift in Sources */,
-				D84224191D8A722B007CA632 /* AddPostNavigationController.swift in Sources */,
 				D84224371D8A76DD007CA632 /* AppUtility.swift in Sources */,
-				D842241D1D8A724F007CA632 /* EventNavigationController.swift in Sources */,
 				D842242E1D8A760F007CA632 /* SettingsViewController.swift in Sources */,
 				D84224241D8A7412007CA632 /* CityItemListViewController.swift in Sources */,
 				D842243D1D8A7823007CA632 /* MainTabBarController.swift in Sources */,
-				D842241F1D8A725F007CA632 /* FeedNavigationController.swift in Sources */,
-				D842241B1D8A723E007CA632 /* CityNavigationController.swift in Sources */,
+				D842245A1D8FBEB7007CA632 /* EventNavigationController.swift in Sources */,
 				D84224421D8A799C007CA632 /* EventDetailsViewController.swift in Sources */,
+				D842245E1D8FBED7007CA632 /* AddPostNavigationController.swift in Sources */,
 				D8955DC61D781D5300573089 /* AppDelegate.swift in Sources */,
+				D84224561D8FBE92007CA632 /* FeedNavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +418,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = varun.com.DigiCity;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -424,6 +430,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = varun.com.DigiCity;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

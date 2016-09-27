@@ -12,10 +12,30 @@ class NotificationViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.isNavigationBarHidden = true
 
         // Do any additional setup after loading the view.
     }
 
+    override func viewWillAppear(_ animated: Bool)
+    {
+        super.viewWillDisappear(animated)
+        self.navigationController?.isNavigationBarHidden = true
+        let tabArray = self.tabBarController?.tabBar.items as NSArray!
+        
+        for  i  in 0..<tabArray!.count {
+            print("Hello tab count \(i) ")
+
+        }
+        
+//        for (UITabBarItem *tabItem in self.tabBarController.tabBar.items) {
+//            //        if ([tabItem.title isEqualToString: NSLocalizedString(kNotificationTabTitle, nil)]) {
+//            if (tabItem.tag == 3){
+//                currentBadgeValue = tabItem.badgeValue;
+//            }
+//        }
+        
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 
 let MainStoryBoard  = UIStoryboard(name: "Main_StoryBoard", bundle: nil)
+let LoggedInUserDefaults = UserDefaults.standard
 
 
 enum Tabs {

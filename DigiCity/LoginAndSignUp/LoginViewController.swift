@@ -8,15 +8,25 @@
 
 import UIKit
 
+
 class LoginViewController: UIViewController {
+
 
     @IBOutlet weak var textFiledEmail: UITextField!
     @IBOutlet weak var textFiledPassword: UITextField!
     @IBOutlet weak var btnLogin: UIButton!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        if  AppUtility.isUserAvailable(){
+            print("true")
+            print(LoggedInUserDefaults.string(forKey: "access_token"))
+        }
+        else{
+            print("false")
+            LoggedInUserDefaults.set("Coding Explorer", forKey: "access_token")
+        }
         // Do any additional setup after loading the view.
     }
 
@@ -25,6 +35,11 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction internal func logInTapped(sender: AnyObject){
+        let mainTabbarController = MainStoryBoard.instantiateViewController(withIdentifier: "MainTabBarController") as! MainTabBarController
+        self.navigationController?.pushViewController(mainTabbarController, animated: true)
+    }
+
 
     /*
     // MARK: - Navigation
