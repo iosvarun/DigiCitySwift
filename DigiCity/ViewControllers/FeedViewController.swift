@@ -34,7 +34,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     
      func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
     
      func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -42,16 +42,31 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         return 4
     }
     
-    
       func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-     let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-     
+        let cell:FeedTableViewCell = tableView.dequeueReusableCell(withIdentifier:"FeedTableViewCell") as! FeedTableViewCell
+        return cell
+        
      // Configure the cell...
-     
-     return cell
-     }
+        
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "leftMenuTableCell")
+//        cell?.textLabel?.textColor = UIColor.black
+//        cell?.imageView?.image = UIImage(named: dic["image"]!)
+//        if #available(iOS 8.2, *) {
+//            cell?.textLabel?.font = UIFont.systemFont(ofSize: 14, weight: UIFontWeightLight)
+//        } else {
+//            cell?.textLabel?.font = UIFont.systemFont(ofSize: 14)
+//        }
+//        cell?.backgroundColor = UIColor.clear
+//        return cell!
+    }
  
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("selected row \(indexPath.row) ")
+
+    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 200;
+    }
     /*
      // Override to support conditional editing of the table view.
      override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

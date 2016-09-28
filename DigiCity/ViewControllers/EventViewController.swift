@@ -8,7 +8,9 @@
 
 import UIKit
 
-class EventViewController: UIViewController {
+class EventViewController: UIViewController, UITableViewDelegate,UITableViewDataSource {
+
+    @IBOutlet weak var eventTableView: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +22,32 @@ class EventViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        // #warning Incomplete implementation, return the number of sections
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // #warning Incomplete implementation, return the number of rows
+        return 4
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell:EventTableViewCell = tableView.dequeueReusableCell(withIdentifier:"EventTableViewCell") as! EventTableViewCell
+        return cell
+        
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("selected row \(indexPath.row) ")
+        
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 300;
     }
     
 
