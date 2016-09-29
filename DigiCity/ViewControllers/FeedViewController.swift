@@ -62,6 +62,8 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
  
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("selected row \(indexPath.row) ")
+        
+ 
 
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

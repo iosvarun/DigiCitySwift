@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CityItemViewController: UIViewController {
+class CityItemViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource {
 
     @IBOutlet weak var cityItemCollectionView: UICollectionView!
     
@@ -28,9 +28,9 @@ class CityItemViewController: UIViewController {
     
     // tell the collection view how many cells to make
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 2
+        return items.count
     }
-    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+    private func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         return 1;
     }
     
@@ -51,10 +51,12 @@ class CityItemViewController: UIViewController {
     
     // MARK: - UICollectionViewDelegate protocol
     
-//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        // handle tap events
-//        print("You selected cell #\(indexPath.item)!")
-//    }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        // handle tap events
+        print("You selected cell #\(indexPath.item)!")
+        let objCityItemListViewController = TabBarDetailsStoryboard.instantiateViewController(withIdentifier: "CityItemListViewController") as! CityItemListViewController
+        self.navigationController?.pushViewController(objCityItemListViewController, animated: true)
+    }
     
 
     /*

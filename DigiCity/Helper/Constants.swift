@@ -10,7 +10,13 @@ import Foundation
 import UIKit
 
 let MainStoryBoard  = UIStoryboard(name: "Main_StoryBoard", bundle: nil)
+let TabBarDetailsStoryboard  = UIStoryboard(name: "TabBarDetails_Storyboard", bundle: nil)
+
 let LoggedInUserDefaults = UserDefaults.standard
+let  kTabBarHideShowAnimationDelay = 0.1
+
+let AppDelegateCons = UIApplication.shared.delegate as! AppDelegate
+
 
 
 enum Tabs {

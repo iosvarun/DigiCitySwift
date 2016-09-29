@@ -39,6 +39,7 @@
 		D8955DCD1D781D5300573089 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8955DCC1D781D5300573089 /* Assets.xcassets */; };
 		D8955DD01D781D5300573089 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8955DCE1D781D5300573089 /* LaunchScreen.storyboard */; };
 		D8B4393E1D9541FA00AE1671 /* CustomBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B4393D1D9541FA00AE1671 /* CustomBadge.swift */; };
+		D8E2212B1D9D2B840014F7CF /* CityItemsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E2212A1D9D2B840014F7CF /* CityItemsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +77,7 @@
 		D8955DCF1D781D5300573089 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D8955DD11D781D5300573089 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8B4393D1D9541FA00AE1671 /* CustomBadge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomBadge.swift; sourceTree = "<group>"; };
+		D8E2212A1D9D2B840014F7CF /* CityItemsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityItemsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 				D8278F671D9BD779005C42BF /* EventTableViewCell.swift */,
 				D8278F691D9BD91A005C42BF /* NotificationTableViewCell.swift */,
 				D8278F6F1D9BEA01005C42BF /* CityItemCollectionViewCell.swift */,
+				D8E2212A1D9D2B840014F7CF /* CityItemsTableViewCell.swift */,
 			);
 			path = CustomCell;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 				D8278F701D9BEA01005C42BF /* CityItemCollectionViewCell.swift in Sources */,
 				D84224291D8A74DC007CA632 /* UserProfileViewController.swift in Sources */,
 				D84224261D8A7426007CA632 /* CityItemDetailsViewController.swift in Sources */,
+				D8E2212B1D9D2B840014F7CF /* CityItemsTableViewCell.swift in Sources */,
 				D84224141D8A71A3007CA632 /* NotificationViewController.swift in Sources */,
 				D84224351D8A76C9007CA632 /* SignUpViewController.swift in Sources */,
 				D84224161D8A71B6007CA632 /* CityItemViewController.swift in Sources */,
