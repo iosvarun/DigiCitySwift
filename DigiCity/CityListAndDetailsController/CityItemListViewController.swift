@@ -22,6 +22,15 @@ class CityItemListViewController: UIViewController, UITableViewDelegate,UITableV
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    override func viewWillAppear(_ animated: Bool)
+    {
+        AppUtility.hideTabBar(animated: true)
+        super.viewWillDisappear(animated)
+        self.navigationController?.isNavigationBarHidden = true
+        
+    }
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 4

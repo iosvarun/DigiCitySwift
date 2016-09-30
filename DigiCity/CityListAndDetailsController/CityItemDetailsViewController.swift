@@ -21,6 +21,11 @@ class CityItemDetailsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction internal func backBtnTapped(sender: AnyObject){
+        self.navigationController?.popViewController(animated: true)
+        
+    }
+//    hideTabBar
 
     /*
     // MARK: - Navigation

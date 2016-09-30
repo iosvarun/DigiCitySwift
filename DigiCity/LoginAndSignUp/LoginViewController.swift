@@ -36,8 +36,10 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction internal func logInTapped(sender: AnyObject){
-        let mainTabbarController = MainStoryBoard.instantiateViewController(withIdentifier: "MainTabBarController") as! MainTabBarController
-        self.navigationController?.pushViewController(mainTabbarController, animated: true)
+        AppDelegateCons.setMainTabbarControllerAsWindowRoot()
+        
+//        let mainTabbarController = MainStoryBoard.instantiateViewController(withIdentifier: "MainTabBarController") as! MainTabBarController
+//        self.navigationController?.pushViewController(mainTabbarController, animated: true)
     }
 
 

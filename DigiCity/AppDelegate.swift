@@ -42,7 +42,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+    
+     func setMainTabbarControllerAsWindowRoot(){
+        // instantiate your desired ViewController
+        self.mainTabBarController = MainStoryBoard.instantiateViewController(withIdentifier: "MainTabBarController") as? MainTabBarController
+        window?.rootViewController = mainTabBarController;
+     }
 
+//    -(void)setMainTabbarControllerAsWindowRoot {
+//    
+//    isWindowOnLandscape=NO;
+//    
+//    if (self.mainTabBarController) {
+//    self.mainTabBarController = nil;
+//    }
+//    self.mainTabBarController = [[UIStoryboard storyboardWithName:kMainIPhoneAutolayoutStoryboard bundle:nil] instantiateViewControllerWithIdentifier:@"MainTabbarController"];
+//    self.window.rootViewController = self.mainTabBarController;
+//    self.window.backgroundColor = [UIColor whiteColor];
+//    [self.window setNeedsDisplay];
+//    }
 
 }
 
