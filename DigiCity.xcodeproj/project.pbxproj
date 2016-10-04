@@ -35,6 +35,7 @@
 		D842245A1D8FBEB7007CA632 /* EventNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84224591D8FBEB7007CA632 /* EventNavigationController.swift */; };
 		D842245C1D8FBECB007CA632 /* NotificationNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D842245B1D8FBECB007CA632 /* NotificationNavigationController.swift */; };
 		D842245E1D8FBED7007CA632 /* AddPostNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D842245D1D8FBED7007CA632 /* AddPostNavigationController.swift */; };
+		D877D8E31DA3DA600042851B /* EventViewDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D877D8E21DA3DA600042851B /* EventViewDetailsController.swift */; };
 		D8955DC61D781D5300573089 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8955DC51D781D5300573089 /* AppDelegate.swift */; };
 		D8955DCD1D781D5300573089 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8955DCC1D781D5300573089 /* Assets.xcassets */; };
 		D8955DD01D781D5300573089 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8955DCE1D781D5300573089 /* LaunchScreen.storyboard */; };
@@ -71,6 +72,7 @@
 		D84224591D8FBEB7007CA632 /* EventNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventNavigationController.swift; sourceTree = "<group>"; };
 		D842245B1D8FBECB007CA632 /* NotificationNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationNavigationController.swift; sourceTree = "<group>"; };
 		D842245D1D8FBED7007CA632 /* AddPostNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPostNavigationController.swift; sourceTree = "<group>"; };
+		D877D8E21DA3DA600042851B /* EventViewDetailsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventViewDetailsController.swift; sourceTree = "<group>"; };
 		D8955DC21D781D5300573089 /* DigiCity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DigiCity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8955DC51D781D5300573089 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8955DCC1D781D5300573089 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 			children = (
 				D84224231D8A7412007CA632 /* CityItemListViewController.swift */,
 				D84224251D8A7426007CA632 /* CityItemDetailsViewController.swift */,
+				D877D8E21DA3DA600042851B /* EventViewDetailsController.swift */,
 			);
 			path = CityListAndDetailsController;
 			sourceTree = "<group>";
@@ -319,6 +322,7 @@
 				D842242B1D8A74F8007CA632 /* OtherUserProfileViewController.swift in Sources */,
 				D8B4393E1D9541FA00AE1671 /* CustomBadge.swift in Sources */,
 				D84224101D8A715B007CA632 /* AddPostViewController.swift in Sources */,
+				D877D8E31DA3DA600042851B /* EventViewDetailsController.swift in Sources */,
 				D8278F681D9BD779005C42BF /* EventTableViewCell.swift in Sources */,
 				D8278F701D9BEA01005C42BF /* CityItemCollectionViewCell.swift in Sources */,
 				D84224291D8A74DC007CA632 /* UserProfileViewController.swift in Sources */,
