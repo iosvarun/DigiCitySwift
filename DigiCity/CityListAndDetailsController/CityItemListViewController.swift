@@ -31,9 +31,16 @@ class CityItemListViewController: UIViewController, UITableViewDelegate,UITableV
         
     }
     
+    override func viewWillDisappear(_ animated: Bool)
+    {
+        AppUtility.showTabBar(animated: true)
+        super.viewWillDisappear(animated)
+        
+    }
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 4
+        return 10
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

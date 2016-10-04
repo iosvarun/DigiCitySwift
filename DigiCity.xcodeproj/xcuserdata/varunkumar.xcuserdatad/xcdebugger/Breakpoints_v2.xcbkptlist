@@ -23,29 +23,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "DigiCity/ViewControllers/CityItemViewController.swift"
-            timestampString = "496830375.105439"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
-            landmarkName = "numberOfSectionsInCollectionView(collectionView:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "DigiCity/AppUtility/AppUtility.swift"
-            timestampString = "496925124.66723"
+            timestampString = "497275577.047367"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
-            landmarkName = "hideTabBar(animated:)"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "showTabBar(animated:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

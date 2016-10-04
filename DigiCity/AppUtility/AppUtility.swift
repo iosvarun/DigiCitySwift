@@ -27,13 +27,20 @@ class AppUtility: NSObject {
 
     class func hideTabBar(animated:Bool) {
         if animated {
-            UIView.animate(withDuration: 0.5, delay: kTabBarHideShowAnimationDelay, options: [.repeat, .curveEaseOut, .autoreverse], animations: {
+            UIView.animate(withDuration: 0.2, delay: kTabBarHideShowAnimationDelay, options: [], animations: {
                 
                 var biggerFrame: CGRect = (AppDelegateCons.mainTabBarController?.view.frame)!
                 let bounds = UIScreen.main.bounds
                 var height = bounds.size.height
-                height = +49
+                print(height)
+                height = height + 49
+                print("height of bounds \(height)")
+
                 biggerFrame.size.height = height
+
+                print("biggerFrame.size.height \(biggerFrame.size.height) ")
+
+
                 AppDelegateCons.mainTabBarController?.view.frame = biggerFrame
                 }, completion: nil)
         }
@@ -52,10 +59,16 @@ class AppUtility: NSObject {
     
     class func showTabBar(animated:Bool) {
         if animated {
-            UIView.animate(withDuration: 0.5, delay: kTabBarHideShowAnimationDelay, options: [.repeat, .curveEaseOut, .autoreverse], animations: {
+            UIView.animate(withDuration: 0.2, delay: kTabBarHideShowAnimationDelay, options: [], animations: {
                 var biggerFrame: CGRect = (AppDelegateCons.mainTabBarController?.view.frame)!
                 let bounds = UIScreen.main.bounds
-                biggerFrame.size.height = bounds.size.height - biggerFrame.midY
+                var height = bounds.size.height
+                print(height)
+                print("height of bounds \(height)")
+                biggerFrame.size.height = height
+//                biggerFrame.size.height = bounds.size.height - biggerFrame.midY
+                print(" showTabBar biggerFrame.size.height \(biggerFrame.size.height) ")
+
                 AppDelegateCons.mainTabBarController?.view.frame = biggerFrame
                 }, completion: nil)
         }
