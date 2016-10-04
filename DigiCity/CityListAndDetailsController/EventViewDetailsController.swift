@@ -24,6 +24,20 @@ class EventViewDetailsController: UIViewController {
     @IBAction internal func backBtnTapped(sender: AnyObject){
         self.navigationController?.popViewController(animated: true)
     }
+    override func viewWillAppear(_ animated: Bool)
+    {
+        AppUtility.hideTabBar(animated: true)
+        super.viewWillDisappear(animated)
+        self.navigationController?.isNavigationBarHidden = true
+        
+    }
+    
+    override func viewWillDisappear(_ animated: Bool)
+    {
+        AppUtility.showTabBar(animated: true)
+        super.viewWillDisappear(animated)
+        
+    }
     /*
     // MARK: - Navigation
 

@@ -27,7 +27,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ifL-GM-eeU" id="isM-nZ-0nV">
-                                            <frame key="frameInset" width="375" height="99"/>
+                                            <frame key="frameInset" width="375" height="99.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w6p-uR-P3x">
@@ -130,7 +130,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="back"/>
                                         <connections>
-                                            <action selector="backBtnTappedWithSender:" destination="9qK-Sn-mhL" eventType="touchUpInside" id="Coq-lE-AwH"/>
+                                            <action selector="backBtnTappedWithSender:" destination="glA-CS-Tju" eventType="touchUpInside" id="Bcz-m7-Isg"/>
                                         </connections>
                                     </button>
                                 </subviews>

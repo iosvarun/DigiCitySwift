@@ -15,6 +15,9 @@ class NotificationViewController: UIViewController,UITableViewDataSource,UITable
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.isNavigationBarHidden = true
+        notificationTableView.separatorInset = UIEdgeInsets.zero
+        notificationTableView.separatorStyle = UITableViewCellSeparatorStyle.none
+
 
         // Do any additional setup after loading the view.
     }
@@ -43,7 +46,7 @@ class NotificationViewController: UIViewController,UITableViewDataSource,UITable
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 4
+        return 12
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -58,7 +61,7 @@ class NotificationViewController: UIViewController,UITableViewDataSource,UITable
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 300;
+        return 80;
     }
     /*
     // MARK: - Navigation
