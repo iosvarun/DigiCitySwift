@@ -11,6 +11,7 @@ import UIKit
 
 let MainStoryBoard  = UIStoryboard(name: "Main_StoryBoard", bundle: nil)
 let TabBarDetailsStoryboard  = UIStoryboard(name: "TabBarDetails_Storyboard", bundle: nil)
+let ProfileStoryboard  = UIStoryboard(name: "Profile", bundle: nil)
 
 let LoggedInUserDefaults = UserDefaults.standard
 let  kTabBarHideShowAnimationDelay = 0.1

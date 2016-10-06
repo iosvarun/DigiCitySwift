@@ -123,8 +123,12 @@ class MainTabBarController: UITabBarController, UITabBarControllerDelegate, UINa
     
    // MARK: tabBarController delegate methods..
     func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
-        print("Selected view controller")
+        if viewController.isKind(of: AddPostNavigationController.self){
+            let objCityItemDetailsViewController = TabBarDetailsStoryboard.instantiateViewController(withIdentifier: "AddPostDetailsViewController") as! AddPostDetailsViewController
+            self.present(objCityItemDetailsViewController, animated:true, completion: nil)
 
+            print("Selected addpost view controller")
+        }
     }
     
      func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool

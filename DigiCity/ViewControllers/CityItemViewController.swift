@@ -26,6 +26,11 @@ class CityItemViewController: UIViewController,UICollectionViewDelegate,UICollec
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction internal func userProfileTapped(sender: AnyObject){
+        let objCityItemListViewController = ProfileStoryboard.instantiateViewController(withIdentifier: "UserProfileViewController") as! UserProfileViewController
+        self.navigationController?.pushViewController(objCityItemListViewController, animated: true)
+    }
+    
     // tell the collection view how many cells to make
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return items.count

@@ -15,6 +15,20 @@ class UserProfileViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    override func viewWillAppear(_ animated: Bool)
+    {
+        AppUtility.hideTabBar(animated: true)
+        super.viewWillDisappear(animated)
+        self.navigationController?.isNavigationBarHidden = true
+        
+    }
+    
+    override func viewWillDisappear(_ animated: Bool)
+    {
+        AppUtility.showTabBar(animated: true)
+        super.viewWillDisappear(animated)
+        
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -22,6 +36,9 @@ class UserProfileViewController: UIViewController {
     }
     
 
+    @IBAction internal func backBtnTapped(sender: AnyObject){
+        self.navigationController?.popViewController(animated: true)
+    }
     /*
     // MARK: - Navigation
 

@@ -30,6 +30,12 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     
+    @IBAction internal func userProfileTapped(sender: AnyObject){
+        let objCityItemListViewController = ProfileStoryboard.instantiateViewController(withIdentifier: "UserProfileViewController") as! UserProfileViewController
+        self.navigationController?.pushViewController(objCityItemListViewController, animated: true)
+    }
+    
+    
      func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
