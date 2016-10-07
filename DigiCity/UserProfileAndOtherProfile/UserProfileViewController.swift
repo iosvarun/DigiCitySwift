@@ -18,7 +18,7 @@ class UserProfileViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool)
     {
         AppUtility.hideTabBar(animated: true)
-        super.viewWillDisappear(animated)
+        super.viewWillAppear(animated)
         self.navigationController?.isNavigationBarHidden = true
         
     }
@@ -38,6 +38,11 @@ class UserProfileViewController: UIViewController {
 
     @IBAction internal func backBtnTapped(sender: AnyObject){
         self.navigationController?.popViewController(animated: true)
+    }
+    
+    @IBAction internal func settingsBtnTapped(sender: AnyObject){
+        let objCityItemListViewController = ProfileStoryboard.instantiateViewController(withIdentifier: "UserSettingsViewController") as! UserSettingsViewController
+        self.navigationController?.pushViewController(objCityItemListViewController, animated: true)
     }
     /*
     // MARK: - Navigation

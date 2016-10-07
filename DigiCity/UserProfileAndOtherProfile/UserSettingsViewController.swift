@@ -16,10 +16,31 @@ class UserSettingsViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    override func viewWillAppear(_ animated: Bool)
+    {
+        AppUtility.hideTabBar(animated: true)
+        super.viewWillAppear(animated)
+        self.navigationController?.isNavigationBarHidden = true
+        
+    }
+    
+    override func viewWillDisappear(_ animated: Bool)
+    {
+        AppUtility.showTabBar(animated: true)
+        super.viewWillDisappear(animated)
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
+    @IBAction internal func backBtnTapped(sender: AnyObject){
+        self.navigationController?.popViewController(animated: true)
+    }
+    
     
 
     /*

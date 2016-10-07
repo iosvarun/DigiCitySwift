@@ -27,7 +27,7 @@ class EventViewDetailsController: UIViewController {
     override func viewWillAppear(_ animated: Bool)
     {
         AppUtility.hideTabBar(animated: true)
-        super.viewWillDisappear(animated)
+        super.viewWillAppear(animated)
         self.navigationController?.isNavigationBarHidden = true
         
     }

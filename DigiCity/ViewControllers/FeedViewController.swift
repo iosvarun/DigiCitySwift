@@ -24,15 +24,14 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     override func viewWillAppear(_ animated: Bool)
     {
-        super.viewWillDisappear(animated)
-        self.navigationController?.isNavigationBarHidden = true
+        super.viewWillAppear(animated)
         
     }
     
     
     @IBAction internal func userProfileTapped(sender: AnyObject){
-        let objCityItemListViewController = ProfileStoryboard.instantiateViewController(withIdentifier: "UserProfileViewController") as! UserProfileViewController
-        self.navigationController?.pushViewController(objCityItemListViewController, animated: true)
+        let objUserProfileViewController = ProfileStoryboard.instantiateViewController(withIdentifier: "UserProfileViewController") as! UserProfileViewController
+        self.navigationController?.pushViewController(objUserProfileViewController, animated: true)
     }
     
     
